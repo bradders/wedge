@@ -1,0 +1,218 @@
+/*------------------------------------*\
+    $Typography
+\*------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------*\
+    $Headings
+\*------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+  font-family: $baseFontStack;
+  text-rendering: optimizelegibility;
+}
+
+h1, .h1, 
+h1 a, .h1 a {
+  margin-bottom: $baseLineHeight / 2;
+  @include font-size($extraLargeFontSize);
+  line-height: 1.2;
+  color: $tertiaryColour;
+}
+
+h2, .h2, 
+h2 a, .h2 a {
+  margin-bottom: $baseLineHeight / 2;
+  @include font-size($largeFontSize);
+  line-height: 1.2;
+  color: $tertiaryColour;
+}
+
+h3, .h3, 
+h3 a, .h3 a {
+  margin-bottom: $baseLineHeight / 1.5;
+  @include font-size($mediumFontSize);
+  line-height: 1.3;
+  color: $tertiaryColour;
+}
+
+h4, .h4, 
+h4 a, .h4 a {
+  margin-bottom: $baseLineHeight / 1.5;
+  font-weight: normal;
+  @include font-size($mediumFontSize);
+  line-height: 1.25;
+  color: $tertiaryColour;
+}
+
+h5, .h5, 
+h6, .h6, 
+h6 a, .h6 a {
+  margin-bottom: $baseLineHeight;
+  @include font-size($baseFontSize);
+  color: $tertiaryColour;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $Links
+\*------------------------------------*/
+a {
+  @include font-size();
+  color: $linkColor;
+  text-decoration: none;
+
+  strong, b {
+    color: $linkColor;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    $Text
+\*------------------------------------*/
+p,
+ol,
+ul,
+dl,
+address {
+  margin-bottom: $baseLineHeight;
+  @include font-size();
+  line-height: $baseLineHeight;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+small {
+  @include font-size($smallFontSize);
+}
+
+cite {
+  font-style : normal;
+}
+
+b, strong {
+  color: $textColor;
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+sub,
+sup {
+  position: relative;
+  @include font-size($smallFontSize);
+  line-height: 0;
+  vertical-align: $baseLineHeight;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $Lists
+\*------------------------------------*/
+ul,
+ol {
+  margin: 0 0 $spacingWidth 0;
+  padding: 0 0 0 $gutterWidth;
+  list-style: inside;
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li ul,
+li ol {
+  margin: 0;
+  @include font-size();
+}
+
+p {
+  color: $baseFontColor;
+  @include font-size();
+}
+
+
+
+
+
+/*------------------------------------*\
+    $Definition Lists
+\*------------------------------------*/
+dl,
+dd {
+  margin-bottom: $baseLineHeight;
+}
+
+dt {
+  color: $tertiaryColour;
+  font-weight: bold;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $Quotes
+\*------------------------------------*/
+blockquote  {
+  margin-bottom: $spacingWidth;
+  padding-left: $spacingWidth;
+  border-left: 5px solid $textColor;
+  font-style: normal;
+  font-family: $baseFontStack;
+
+  &:before, &:after {
+    content: "";
+    content: none;
+  }
+
+}
+
+q {
+  quotes: none;
+
+  &:before, &:after {
+    content: "";
+    content: none;
+  }
+
+}
+
+
+
+

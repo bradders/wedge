@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    $Mixins
+\*------------------------------------*/
+@mixin font-size($fontSize: $baseFontSize){
+  font-size: #{$fontSize}px;
+  font-size: #{$fontSize / 10}rem;
+}
+
+@mixin clearfix {
+  *zoom : 1;
+  
+  &:before, &:after {
+    display: table;
+    content : "";
+  }
+  
+  &:after {
+    clear : both;
+  }
+}
+
+@mixin breakpoint($point) {
+
+  @if $point == medium {
+    @media (max-width: 950px) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 500px) { @content; }
+  }
+  
+}
+
+
+
+

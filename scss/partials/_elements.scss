@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    $Elements
+\*------------------------------------*/
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+.google-map {
+  
+  img {
+    max-width: none;
+  }
+
+}
+
+hr {
+  display: block;
+  @include clearfix();
+  height: 3px;
+  margin: $baseLineHeight 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid $secondaryColour;
+  border-bottom: 1px solid $secondaryColour;
+}
+
+
+
+

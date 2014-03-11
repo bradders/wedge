@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    $Variables
+\*------------------------------------*/
+
+$containerWidth: 1200px;
+$gutterWidth: 20px;
+$spacingWidth: 20px;
+$baseLineHeight: 1.5;
+
+$baseFontColor: #000000;
+$baseFontStack: Verdana, serif;
+
+$textColor: #000000;
+$primaryColor: #ff0000;
+$secondaryColour: #e5e5e5;
+$tertiaryColour: #00ff00;
+$linkColor: $primaryColor;
+
+$baseFontSize: 14;
+$baseLineHeight: 1.5em;
+
+$extraSmallFontSize: $baseFontSize - 4;   // 10
+$smallFontSize: $baseFontSize - 2;        // 12
+$mediumFontSize: $baseFontSize + 4;       // 18
+$largeFontSize: $baseFontSize + 10;       // 24
+$extraLargeFontSize: $baseFontSize + 16;  // 30
+
+
